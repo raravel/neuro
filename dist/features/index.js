@@ -10,27 +10,27 @@ exports.call = call;
 exports.normalize = normalize;
 exports.RegexpSplitter = exports.RegexpNormalizer = exports.LowerCaseNormalizer = exports.FeatureLookupTable = exports.Hypernyms = exports.NGramsOfLetters = void 0;
 
-var NGramsOfLetters = require("./NGramsOfLetters");
+var NGramsOfLetters = require("./NGramsOfLetters")["default"];
 
 exports.NGramsOfLetters = NGramsOfLetters;
 
-var Hypernyms = require("./HypernymExtractor");
+var Hypernyms = require("./HypernymExtractor")["default"];
 
 exports.Hypernyms = Hypernyms;
 
-var FeatureLookupTable = require("./FeatureLookupTable");
+var FeatureLookupTable = require("./FeatureLookupTable")["default"];
 
 exports.FeatureLookupTable = FeatureLookupTable;
 
-var LowerCaseNormalizer = require("./LowerCaseNormalizer");
+var LowerCaseNormalizer = require("./LowerCaseNormalizer")["default"];
 
 exports.LowerCaseNormalizer = LowerCaseNormalizer;
 
-var RegexpNormalizer = require("./RegexpNormalizer");
+var RegexpNormalizer = require("./RegexpNormalizer")["default"];
 
 exports.RegexpNormalizer = RegexpNormalizer;
 
-var RegexpSplitter = require("./RegexpSplitter");
+var RegexpSplitter = require("./RegexpSplitter")["default"];
 /**
  * CollectionOfExtractors - combines the features from several feature extractors. 
  * @param extractors - an array of other feature extractors. 
