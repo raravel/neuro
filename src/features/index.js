@@ -1,9 +1,9 @@
-export const NGramsOfLetters = require("./NGramsOfLetters");
-export const Hypernyms = require("./HypernymExtractor");
-export const FeatureLookupTable = require("./FeatureLookupTable");
-export const LowerCaseNormalizer = require("./LowerCaseNormalizer");
-export const RegexpNormalizer = require("./RegexpNormalizer");
-export const RegexpSplitter = require("./RegexpSplitter");
+export const NGramsOfLetters = require("./NGramsOfLetters").default;
+export const Hypernyms = require("./HypernymExtractor").default;
+export const FeatureLookupTable = require("./FeatureLookupTable").default;
+export const LowerCaseNormalizer = require("./LowerCaseNormalizer").default;
+export const RegexpNormalizer = require("./RegexpNormalizer").default;
+export const RegexpSplitter = require("./RegexpSplitter").default;
 
 /**
  * CollectionOfExtractors - combines the features from several feature extractors. 
